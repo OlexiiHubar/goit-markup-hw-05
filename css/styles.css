@@ -598,7 +598,8 @@ img {
     transition: background-color var(--transition-time) var(--transition-cubic);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
     background-color: var(--accent);
 
     transition: background-color var(--transition-time) var(--transition-cubic);

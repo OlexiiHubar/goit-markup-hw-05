@@ -166,7 +166,7 @@ img {
 .contact-item:hover,
 .contact-item:focus {
     color: var(--accent);
-    transition: color var(--transition-time) var(--transition-cubic);
+    
 }
 
 .nav-link {
@@ -263,9 +263,6 @@ img {
 .hero-btn:focus {
     color: var(--accent);
     background-color: var(--white-color);
-
-    transition: color var(--transition-time) var(--transition-cubic),
-                background-color var(--transition-time) var(--transition-cubic);
 }
 
 /* Особливості компанії */
@@ -296,14 +293,6 @@ img {
 
 
 }
-
-
-
-
-
-
-
-
 
 .features-title {
     margin-bottom: 10px;
@@ -450,8 +439,7 @@ img {
     color: var(--white-color);
     background-color: var(--accent);
 
-    transition: color var(--transition-time) var(--transition-cubic),
-                background-color var(--transition-time) var(--transition-cubic);
+    
 
     
 }
@@ -489,17 +477,15 @@ img {
 
     transition: color var(--transition-time) var(--transition-cubic),
                 background-color var(--transition-time) var(--transition-cubic);
-    /* outline: 1px solid black; */
+
 }
 
 .clients-link:hover,
 .clients-link:focus {
     color: var(--accent);
     border-color: var(--accent);
-
-    transition: color var(--transition-time) var(--transition-cubic),
-                background-color var(--transition-time) var(--transition-cubic);
 }
+    
 
 
 
@@ -569,8 +555,6 @@ img {
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent);
-
-    transition: color var(--transition-time) var(--transition-cubic);
 }
 
 .adress-container {
@@ -601,8 +585,6 @@ img {
 .footer-link:hover,
 .footer-link:focus {
     background-color: var(--accent);
-
-    transition: background-color var(--transition-time) var(--transition-cubic);
 }
 
 
@@ -628,8 +610,9 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-100%, -50%)  rotate(-180deg)  ;
+    transform: translate(-100%, -50%)  rotate(180deg)  ;
 }
+
 
 .modal {
     position: absolute;
@@ -686,17 +669,16 @@ img {
     border-radius: 4px;
     border-color: var(--filter-border-color);
     
+    transition: color var(--transition-time) var(--transition-cubic),
+                box-shadow var(--transition-time) var(--transition-cubic),
+                background-color var(--transition-time) var(--transition-cubic);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--accent);
-    box-shadow: var(--filter-shadow-color);
-    transition: color var(--transition-time) var(--transition-cubic),
-                box-shadow var(--transition-time) var(--transition-cubic),
-                background-color var(--transition-time) var(--transition-cubic);
-                 
+    box-shadow: var(--filter-shadow-color);             
 }
 
 .filter-list {
@@ -749,21 +731,21 @@ img {
 
     transform: translateY(100%);
     transition: transform var(--transition-time) var(--transition-cubic);
-    
+                    
 
 }
 
 .project-link:hover,
 .project-link:focus {
     box-shadow: var(--project-shadow-color);
-    transition: box-shadow var(--transition-time) var(--transition-cubic);
+    
 }
 
 .project-link:hover .project-cover-text,
 .project-link:focus .project-cover-text {
     transform: translateY(0%);
-    transition: transform var(--transition-time) var(--transition-cubic);
-}
+
+} 
 
 .project-list .project-item {
     flex-basis: calc((100% - 60px) / 3);  

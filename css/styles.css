@@ -476,7 +476,7 @@ img {
     border-radius: 5px;
 
     transition: color var(--transition-time) var(--transition-cubic),
-                background-color var(--transition-time) var(--transition-cubic);
+                border-color var(--transition-time) var(--transition-cubic);
 
 }
 
@@ -529,7 +529,8 @@ img {
 
 }
 
-.address-list .footer-contact {
+.address-list .footer-contact,
+.address-item {
     font-size: 14px;
     line-height: 1.71;
 }
